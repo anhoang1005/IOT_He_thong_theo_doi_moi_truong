@@ -1,0 +1,45 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Oct 17, 2023, 6:36:52 PM
+    Author     : Hoang Van An
+*/
+
+a{
+    text-decoration: none;
+}
+.visitors-table tbody tr td:last-child {
+    display: flex;
+    align-items: center;
+}
+
+.visitors-table .progress {
+    flex: 1;
+}
+
+.visitors-table .progress-parcent {
+    text-align: right;
+    margin-left: 10px;
+}
+
+.image-container {
+    position: relative;
+}
+
+.image-container img {
+    width: 125px; /* Điều chỉnh kích thước ảnh theo ý muốn */
+    height: 125px; /* Điều chỉnh kích thước ảnh theo ý muốn */
+    transform-origin: center center; /* Đặt điểm quay ở chính giữa ảnh */
+    animation: rotate 1s linear infinite; /* Tạo hiệu ứng xoay vô hạn */
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg); /* Bắt đầu ở góc 0 độ */
+    }
+    to {
+        transform: rotate(360deg); /* Kết thúc ở góc 360 độ (hoặc 1 vòng đầy đủ) */
+    }
+}
